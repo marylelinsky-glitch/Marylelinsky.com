@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 
 	<style>
-		/* 🌌 FUNDO DEGRADÊ */
+		/* FUNDO DEGRADÊ */
 		body {
 			background: linear-gradient(135deg, #2e1f47, #3a3f87, #6a5acd);
 			color: #f5f5f5;
@@ -17,7 +17,7 @@
 			background: transparent;
 		}
 
-		/* ✨ TEXTO */
+		/* TEXTO */
 		h1, h2, h3 {
 			color: #ffffff;
 		}
@@ -26,7 +26,7 @@
 			color: #e0e0e0;
 		}
 
-		/* 🔘 BOTÕES */
+		/* BOTÕES */
 		.button {
 			background-color: #ffffff !important;
 			color: #2e1f47 !important;
@@ -37,17 +37,12 @@
 			background-color: #dcdcdc !important;
 		}
 
-		/* 🤝 PARCERIAS MAIS LIMPAS */
-		.parcerias {
-			padding: 60px 20px;
-			text-align: center;
+		/* FORMULÁRIO DE CONTACTO */
+		form label {
+			color: #e0e0e0;
 		}
 
-		.parcerias .item {
-			margin-bottom: 30px;
-		}
-
-		/* 🔗 REDES */
+		/* REDES */
 		.icons a {
 			color: #ffffff !important;
 			font-size: 20px;
@@ -64,80 +59,181 @@
 <div id="wrapper" class="divided">
 
 	<!-- HERO -->
-	<section class="banner style1 orient-left content-align-left image-position-right fullscreen">
+	<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 		<div class="content">
 			<h1>Marylelin Lelinsky</h1>
+
 			<p class="major">
-				Autora e ilustradora portuguesa. Histórias onde o tempo, a memória e a ausência ganham forma.
+				Autora e ilustradora portuguesa. Crio histórias sobre memória, perda e os lugares onde o tempo não passa — entre literatura infantil, poesia e ficção literária.
 			</p>
+
 			<ul class="actions stacked">
-				<li><a href="#livros" class="button">Explorar livros</a></li>
+				<li><a href="#livros" class="button big wide smooth-scroll-middle">Os meus livros</a></li>
+			</ul>
+		</div>
+
+		<div class="image">
+			<img src="images/banner.jpeg" alt="Marylelin Lelinsky" />
+		</div>
+	</section>
+
+	<!-- LIVRO 1 -->
+	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="livros">
+		<div class="content">
+			<h2>Saudade é Nome de Flor</h2>
+			<p>Um livro ilustrado sobre amor, ausência e as coisas que continuam a florescer mesmo depois da despedida.</p>
+
+			<ul class="actions stacked">
+				<li><a href="https://www.amazon.es/dp/B0FV3CL59X" class="button">Comprar livro</a></li>
 			</ul>
 		</div>
 		<div class="image">
-			<img src="images/banner.jpg" alt="">
+			<img src="images/spotlight01.jpg" alt="Saudade é Nome de Flor" />
 		</div>
 	</section>
 
-	<!-- LIVROS -->
-	<section id="livros" class="wrapper style1 align-center">
-		<div class="inner">
-			<h2>Livros</h2>
+	<!-- LIVRO 2 -->
+	<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+		<div class="content">
+			<h2>O Sonho dos Mortos</h2>
+			<p>Um romance onde o tempo devora memórias e as histórias ganham vida entre páginas esquecidas.</p>
+
+			<ul class="actions stacked">
+				<li><a href="https://www.amazon.es/dp/B0GXQY5XT6" class="button">Comprar livro</a></li>
+			</ul>
 		</div>
+		<div class="image">
+			<img src="images/spotlight02.jpg" alt="O Sonho dos Mortos" />
+		</div>
+	</section>
 
-		<section class="spotlight">
-			<div class="content">
-				<h2>Saudade é Nome de Flor</h2>
-				<p>Uma história ilustrada sobre amor e permanência.</p>
-				<a href="#" class="button">Comprar</a>
-			</div>
-		</section>
+	<!-- LIVRO 3 -->
+	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+		<div class="content">
+			<h2>Alma na Neblina</h2>
+			<p>Desabafos terapêuticos sobre identidade, dor e reconstrução emocional através da escrita.</p>
 
-		<section class="spotlight">
-			<div class="content">
-				<h2>O Sonho dos Mortos</h2>
-				<p>Memórias que resistem ao tempo e atravessam histórias.</p>
-				<a href="#" class="button">Comprar</a>
-			</div>
-		</section>
-
-		<section class="spotlight">
-			<div class="content">
-				<h2>Alma na Neblina</h2>
-				<p>Reflexões íntimas sobre identidade e reconstrução.</p>
-				<a href="#" class="button">Comprar</a>
-			</div>
-		</section>
+			<ul class="actions stacked">
+				<li><a href="https://www.amazon.es/dp/B088LD4KNN" class="button">Comprar livro</a></li>
+			</ul>
+		</div>
+		<div class="image">
+			<img src="images/spotlight03.jpg" alt="Alma na Neblina" />
+		</div>
 	</section>
 
 	<!-- PARCERIAS -->
-	<section class="parcerias">
-		<h2>Ilustração em parceria</h2>
-		<p>Projetos onde participei como ilustradora.</p>
-
-		<div class="item">
-			<h3>Livro em parceria 1</h3>
-			<p>Ilustração para obra literária.</p>
-			<a href="#" class="button small">Ver livro</a>
+	<section class="wrapper style1 align-center">
+		<div class="inner">
+			<h2>Ilustração em parceria</h2>
+			<p>Livros onde participei como ilustradora em colaboração com outros autores.</p>
 		</div>
 
-		<div class="item">
-			<h3>Livro em parceria 2</h3>
-			<p>Projeto ilustrado em colaboração.</p>
-			<a href="#" class="button small">Ver livro</a>
+		<div class="items style1 medium onscroll-fade-in">
+
+			<section>
+				<span class="icon solid style2 major fa-book"></span>
+				<h3>Duas Irmãs</h3>
+				<p>Ilustração realizada para este projeto em colaboração com o autor.</p>
+
+				<ul class="actions stacked">
+					<li><a href="https://www.wook.pt/livro/duas-irmas-diana-de-bastos-couto/23150195" class="button small">Ver livro</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<span class="icon solid style2 major fa-book"></span>
+				<h3>Margarida e a Sinfonia da Planície</h3>
+				<p>Projeto ilustrado em parceria, focado em literatura infantil / editorial.</p>
+
+				<ul class="actions stacked">
+					<li><a href="https://shop.selfpub.chiadobooks.com/pt-PT/book/22079612/margarida/PB" class="button small">Ver livro</a></li>
+				</ul>
+			</section>
+
 		</div>
 	</section>
 
 	<!-- GALERIA -->
 	<section class="wrapper style1 align-center">
 		<div class="inner">
-			<h2>Ilustrações</h2>
+			<h2>Ilustrações &amp; Universo visual</h2>
+			<p>Um espaço onde as histórias também vivem em imagem.</p>
 		</div>
 
-		<div class="gallery">
-			<article><img src="images/gallery/01.jpg" alt=""></article>
-			<article><img src="images/gallery/02.jpg" alt=""></article>
-			<article><img src="images/gallery/03.jpg" alt=""></article>
+		<div class="gallery style2 medium lightbox onscroll-fade-in">
+
+			<article>
+				<a href="images/gallery/fulls/01.jpg" class="image">
+					<img src="images/gallery/thumbs/01.jpg" alt="" />
+				</a>
+			</article>
+
+			<article>
+				<a href="images/gallery/fulls/02.jpg" class="image">
+					<img src="images/gallery/thumbs/02.jpg" alt="" />
+				</a>
+			</article>
+
+			<article>
+				<a href="images/gallery/fulls/03.jpg" class="image">
+					<img src="images/gallery/thumbs/03.jpg" alt="" />
+				</a>
+			</article>
+
+			<article>
+				<a href="images/gallery/fulls/04.jpg" class="image">
+					<img src="images/gallery/thumbs/04.jpg" alt="" />
+				</a>
+			</article>
+
+			<article>
+				<a href="images/gallery/fulls/05.jpg" class="image">
+					<img src="images/gallery/thumbs/05.jpg" alt="" />
+				</a>
+			</article>
+
+			<article>
+				<a href="images/gallery/fulls/06.jpg" class="image">
+					<img src="images/gallery/thumbs/06.jpg" alt="" />
+				</a>
+			</article>
+
+		</div>
+	</section>
+
+	<!-- CONTACTO -->
+	<section class="wrapper style1 align-center">
+		<div class="inner medium">
+			<h2>Contacto</h2>
+
+			<p>
+				Para colaborações, editores ou projetos criativos, entra em contacto.
+			</p>
+
+			<form method="post" action="#">
+				<div class="fields">
+					<div class="field half">
+						<label for="name">Nome</label>
+						<input type="text" name="name" id="name" />
+					</div>
+
+					<div class="field half">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" />
+					</div>
+
+					<div class="field">
+						<label for="message">Mensagem</label>
+						<textarea name="message" id="message" rows="6"></textarea>
+					</div>
+				</div>
+
+				<ul class="actions special">
+					<li><input type="submit" value="Enviar" /></li>
+				</ul>
+			</form>
+
 		</div>
 	</section>
 
@@ -146,17 +242,18 @@
 		<div class="inner">
 
 			<ul class="icons">
-				<li><a href="#"><span class="label">Instagram</span></a></li>
-				<li><a href="#"><span class="label">Facebook</span></a></li>
-				<li><a href="#"><span class="label">Email</span></a></li>
+				<li><a href="https://www.instagram.com/marylelinsky" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.facebook.com/share/14rrHsrfXHx/" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="mailto:marylelinsky@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 
-			<p>©️ Marylelin Lelinsky</p>
+			<p>&copy; Marylelin Lelinsky. Todos os direitos reservados.</p>
 		</div>
 	</footer>
 
 </div>
 
+<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -166,236 +263,4 @@
 <script src="assets/js/main.js"></script>
 
 </body>
-</html>
-		<!-- Wrapper -->
-		<div id="wrapper" class="divided">
-
-			<!-- HERO -->
-			<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-				<div class="content">
-					<h1>Marylelin Lelinsky</h1>
-
-					<p class="major">
-						Autora e ilustradora portuguesa. Crio histórias sobre memória, perda e os lugares onde o tempo não passa — entre literatura infantil, poesia e ficção literária.
-					</p>
-
-					<ul class="actions stacked">
-						<li><a href="#livros" class="button big wide smooth-scroll-middle">Os meus livros</a></li>
-					</ul>
-				</div>
-
-				<div class="image">
-					<img src="images/banner.jpeg" alt="Marylelin Lelinsky" />
-				</div>
-			</section>
-
-			<!-- LIVRO 1 -->
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="livros">
-	<div class="content">
-		<h2>Saudade é Nome de Flor</h2>
-		<p>Um livro ilustrado sobre amor, ausência e as coisas que continuam a florescer mesmo depois da despedida.</p>
-
-		<ul class="actions stacked">
-	<li><a href= www.amazon.es/dp/B0FV3CL59X class="button">Comprar livro</a></li>
-</ul>
-	</div>
-	<div class="image">
-		<img src="images/spotlight01.jpg" alt="Saudade é Nome de Flor" />
-	</div>
-</section>
-
-<!-- LIVRO 2 -->
-<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-	<div class="content">
-		<h2>O Sonho dos Mortos</h2>
-		<p>Um romance onde o tempo devora memórias e as histórias ganham vida entre páginas esquecidas.</p>
-
-		<ul class="actions stacked">
-			<li><a href=https://www.amazon.es/dp/B0GXQY5XT6 class="button">Comprar livro</a></li>
-		</ul>
-	</div>
-	<div class="image">
-		<img src="images/spotlight02.jpg" alt="O Sonho dos Mortos" />
-	</div>
-</section>
-
-<!-- LIVRO 3 -->
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-	<div class="content">
-		<h2>Alma na Neblina</h2>
-		<p>Desabafos terapêuticos sobre identidade, dor e reconstrução emocional através da escrita.</p>
-
-		<ul class="actions stacked">
-			<li><a href=https://www.amazon.es/dp/B088LD4KNN class="button">Comprar livro</a></li>
-		</ul>
-	</div>
-	<div class="image">
-		<img src="images/spotlight03.jpg" alt="Alma na Neblina" />
-	</div>
-</section><section class="wrapper style1 align-center">
-	<div class="inner">
-		<h2>Ilustração em parceria</h2>
-		<p>Livros onde participei como ilustradora em colaboração com outros autores.</p>
-	</div>
-
-	<div class="items style1 medium onscroll-fade-in">
-
-		<section>
-			<span class="icon solid style2 major fa-book"></span>
-			<h3>Duas Irmãs</h3>
-			<p>Ilustração realizada para este projeto em colaboração com o autor.</p>
-
-			<ul class="actions stacked">
-				<li><a href=https://www.wook.pt/livro/duas-irmas-diana-de-bastos-couto/23150195 class="button small">Ver livro</a></li>
-			</ul>
-		</section>
-
-		<section><section class="wrapper style1 align-center">
-	<div class="inner">
-		<h2>Ilustração em parceria</h2>
-		<p>Livros onde participei como ilustradora em colaboração com outros autores.</p>
-
-		<div class="items style1 medium">
-
-			<section>
-				<span class="icon solid style2 major fa-book"></span>
-				<h3>Projeto 1</h3>
-				<p>Ilustração editorial em livro infantil.</p>
-				<a href="#" class="button small">Ver livro</a>
-			</section>
-
-			<section>
-				<span class="icon solid style2 major fa-book"></span>
-				<h3>Projeto 2</h3>
-				<p>Colaboração em obra literária ilustrada.</p>
-				<a href="#" class="button small">Ver livro</a>
-			</section>
-
-		</div>
-	</div>
-</section>
-			<span class="icon solid style2 major fa-book"></span>
-			<h3>Margarida e a Sinfonia da Planicie</h3>
-			<p>Projeto ilustrado em parceria, focado em literatura infantil / editorial.</p>
-
-			<ul class="actions stacked">
-				<li><a href=https://shop.selfpub.chiadobooks.com/pt-PT/book/22079612/margarida/PB class="button small">Ver livro</a></li>
-			</ul>
-		</section>
-
-	</div>
-</section>
-
-			<!-- GALERIA -->
-			<section class="wrapper style1 align-center">
-				<div class="inner">
-					<h2>Ilustrações & Universo visual</h2>
-					<p>Um espaço onde as histórias também vivem em imagem.</p>
-				</div>
-
-				<div class="gallery style2 medium lightbox onscroll-fade-in">
-
-					<article>
-						<a href="images/gallery/fulls/01.jpg" class="image">
-							<img src="images/gallery/thumbs/01.jpg" alt="" />
-						</a>
-					</article>
-
-					<article>
-						<a href="images/gallery/fulls/02.jpg" class="image">
-							<img src="images/gallery/thumbs/02.jpg" alt="" />
-						</a>
-					</article>
-
-					<article>
-						<a href="images/gallery/fulls/03.jpg" class="image">
-							<img src="images/gallery/thumbs/03.jpg" alt="" />
-						</a>
-					</article>
-
-					<article>
-						<a href="images/gallery/fulls/04.jpg" class="image">
-							<img src="images/gallery/thumbs/04.jpg" alt="" />
-						</a>
-					</article>
-
-					<article>
-						<a href="images/gallery/fulls/05.jpg" class="image">
-							<img src="images/gallery/thumbs/05.jpg" alt="" />
-						</a>
-					</article>
-
-					<article>
-						<a href="images/gallery/fulls/06.jpg" class="image">
-							<img src="images/gallery/thumbs/06.jpg" alt="" />
-						</a>
-					</article>
-
-				</div>
-			</section>
-
-			<!-- CONTACTO -->
-			<section class="wrapper style1 align-center">
-				<div class="inner medium">
-					<h2>Contacto</h2>
-
-					<p>
-						Para colaborações, editores ou projetos criativos, entra em contacto.
-					</p>
-
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Nome</label>
-								<input type="text" name="name" id="name" />
-							</div>
-
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" />
-							</div>
-
-							<div class="field">
-								<label for="message">Mensagem</label>
-								<textarea name="message" id="message" rows="6"></textarea>
-							</div>
-						</div>
-
-						<ul class="actions special">
-							<li><input type="submit" value="Enviar" /></li>
-						</ul>
-					</form>
-
-				</div>
-			</section>
-
-			<!-- FOOTER -->
-			<footer class="wrapper style1 align-center">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands style2 fa-instagram"><span>Instagram</span></a></li>
-						<li><a href="#" class="icon brands style2 fa-facebook-f"><span>Facebook</span></a></li>
-						<li><a href="#" class="icon style2 fa-envelope"><span>Email</span></a></li>
-					</ul><ul class="icons">
-	<li><a href="https://instagram.com/https://www.instagram.com/marylelinsky?stkn=bDRseml4YzVteTdv&utm_source=qr  class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-	<li><a href="https://facebook.com/https://www.facebook.com/share/14rrHsrfXHx/  class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-	<li><a href="mailto:marylelinsky@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-</ul>
-
-					<p>&copy; Marylelin Lelinsky. Todos os direitos reservados.</p>
-				</div>
-			</footer>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
