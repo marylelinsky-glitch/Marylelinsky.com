@@ -5,11 +5,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 	<style>
-		/* FUNDO DEGRADÊ */
+		/* FUNDO — neblina ao entardecer, com pétala de flor */
 		body {
-			background: linear-gradient(135deg, #2e1f47, #3a3f87, #6a5acd);
+			background: linear-gradient(135deg, #16232e 0%, #2e4756 55%, #5e7a86 100%);
 			color: #f5f5f5;
 		}
 
@@ -28,13 +29,13 @@
 
 		/* BOTÕES */
 		.button {
-			background-color: #ffffff !important;
-			color: #2e1f47 !important;
+			background-color: #e8b4b8 !important; /* rosa envelhecido — a flor da saudade */
+			color: #2a1a1c !important;
 			border: none !important;
 		}
 
 		.button:hover {
-			background-color: #dcdcdc !important;
+			background-color: #d89aa0 !important;
 		}
 
 		/* FORMULÁRIO DE CONTACTO */
@@ -44,12 +45,28 @@
 
 		/* REDES */
 		.icons a {
-			color: #ffffff !important;
-			font-size: 20px;
+			color: #e8b4b8 !important;
+			font-size: 22px;
 		}
 
 		.icons a:hover {
-			color: #cccccc !important;
+			color: #ffffff !important;
+		}
+
+		/* GALERIA — todas as imagens com a mesma dimensão */
+		.gallery article,
+		.gallery article .image {
+			display: block;
+			width: 100%;
+		}
+
+		.gallery article img {
+			width: 100%;
+			aspect-ratio: 4 / 3;      /* proporção igual para todas */
+			height: auto;
+			object-fit: cover;        /* corta sem distorcer */
+			object-position: center;
+			display: block;
 		}
 	</style>
 </head>
@@ -68,12 +85,12 @@
 			</p>
 
 			<ul class="actions stacked">
-				<li><a href="#livros" class="button big wide smooth-scroll-middle">Os meus livros</a></li>
+				<li><a href="#livros" class="button big wide smooth-scroll-middle"><i class="fa-solid fa-book-open"></i> Os meus livros</a></li>
 			</ul>
 		</div>
 
 		<div class="image">
-			<img src="images/banner.jpeg" alt="Marylelin Lelinsky" />
+			<img src="images/banner.jpg" alt="Marylelin Lelinsky" />
 		</div>
 	</section>
 
@@ -84,7 +101,7 @@
 			<p>Um livro ilustrado sobre amor, ausência e as coisas que continuam a florescer mesmo depois da despedida.</p>
 
 			<ul class="actions stacked">
-				<li><a href="https://www.amazon.es/dp/B0FV3CL59X" class="button">Comprar livro</a></li>
+				<li><a href="https://www.amazon.es/dp/B0FV3CL59X" class="button"><i class="fa-solid fa-cart-shopping"></i> Comprar livro</a></li>
 			</ul>
 		</div>
 		<div class="image">
@@ -99,7 +116,7 @@
 			<p>Um romance onde o tempo devora memórias e as histórias ganham vida entre páginas esquecidas.</p>
 
 			<ul class="actions stacked">
-				<li><a href="https://www.amazon.es/dp/B0GXQY5XT6" class="button">Comprar livro</a></li>
+				<li><a href="https://www.amazon.es/dp/B0GXQY5XT6" class="button"><i class="fa-solid fa-cart-shopping"></i> Comprar livro</a></li>
 			</ul>
 		</div>
 		<div class="image">
@@ -114,7 +131,7 @@
 			<p>Desabafos terapêuticos sobre identidade, dor e reconstrução emocional através da escrita.</p>
 
 			<ul class="actions stacked">
-				<li><a href="https://www.amazon.es/dp/B088LD4KNN" class="button">Comprar livro</a></li>
+				<li><a href="https://www.amazon.es/dp/B088LD4KNN" class="button"><i class="fa-solid fa-cart-shopping"></i> Comprar livro</a></li>
 			</ul>
 		</div>
 		<div class="image">
@@ -137,7 +154,7 @@
 				<p>Ilustração realizada para este projeto em colaboração com o autor.</p>
 
 				<ul class="actions stacked">
-					<li><a href="https://www.wook.pt/livro/duas-irmas-diana-de-bastos-couto/23150195" class="button small">Ver livro</a></li>
+					<li><a href="https://www.wook.pt/livro/duas-irmas-diana-de-bastos-couto/23150195" class="button small"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver livro</a></li>
 				</ul>
 			</section>
 
@@ -147,7 +164,7 @@
 				<p>Projeto ilustrado em parceria, focado em literatura infantil / editorial.</p>
 
 				<ul class="actions stacked">
-					<li><a href="https://shop.selfpub.chiadobooks.com/pt-PT/book/22079612/margarida/PB" class="button small">Ver livro</a></li>
+					<li><a href="https://shop.selfpub.chiadobooks.com/pt-PT/book/22079612/margarida/PB" class="button small"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver livro</a></li>
 				</ul>
 			</section>
 
@@ -214,23 +231,23 @@
 			<form method="post" action="#">
 				<div class="fields">
 					<div class="field half">
-						<label for="name">Nome</label>
+						<label for="name"><i class="fa-solid fa-user"></i> Nome</label>
 						<input type="text" name="name" id="name" />
 					</div>
 
 					<div class="field half">
-						<label for="email">Email</label>
+						<label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
 						<input type="email" name="email" id="email" />
 					</div>
 
 					<div class="field">
-						<label for="message">Mensagem</label>
+						<label for="message"><i class="fa-solid fa-pen"></i> Mensagem</label>
 						<textarea name="message" id="message" rows="6"></textarea>
 					</div>
 				</div>
 
 				<ul class="actions special">
-					<li><input type="submit" value="Enviar" /></li>
+					<li><input type="submit" value="Enviar" class="button" /></li>
 				</ul>
 			</form>
 
