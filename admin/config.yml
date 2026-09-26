@@ -5,7 +5,7 @@ backend:
 # Quando usares GitHub direto (sem Netlify), troca acima por:
 # backend:
 #   name: github
-#   repo: O_TEU_USUARIO/O_TEU_REPOSITORIO
+#   repo: marylelinsky-glitch/marylelinsky.github.io
 #   branch: main
 
 media_folder: "images/uploads"
