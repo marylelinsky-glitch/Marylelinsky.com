@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Quando usares GitHub direto (sem Netlify), troca acima por:
+# backend:
+#   name: github
+#   repo: O_TEU_USUARIO/O_TEU_REPOSITORIO
+#   branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Capa", name: "image", widget: "image", required: false }
+      - { label: "Resumo", name: "description", widget: "text", required: false }
+      - { label: "Corpo", name: "body", widget: "markdown" }
