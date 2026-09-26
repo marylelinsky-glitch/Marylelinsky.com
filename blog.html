@@ -88,11 +88,11 @@
 		// 1) Escolhe a tua palavra-passe.
 		// 2) Abre https://emn178.github.io/online-tools/sha256.html
 		//    escreve a palavra-passe, copia o resultado (ex.: a3f1...) e cola aqui em baixo.
-		var PASSWORD_HASH = "COLOCA_AQUI_O_HASH_SHA256_DA_TUA_PALAVRA_PASSE";
+		var PASSWORD_HASH = a1c3c58983cc47cb072ff9dec3cce3ca0dcef2ee890f6026036f3ef54712a0d4;
 
 		// 3) ID da tua folha de Google Sheets (ve as instrucoes no fim do ficheiro)
-		var SHEET_ID = "COLOCA_AQUI_O_ID_DA_TUA_FOLHA";
-		var SHEET_URL = "https://opensheet.elk.sh/" + SHEET_ID + "/diario";
+		var SHEET_ID = "-1vRmKqFArAafsJ6uorwK-4Va0rNH7GBz6XqS9w1lIYZoqzTEcioRebeYnQGHCjkQKbzXBYRKvtTQsETt/pubhtml";
+		var SHEET_URL = https://docs.google.com/spreadsheets/d/1-m8_cZbntLnYuQUNHTbgk2Y-21NkPr4FxvmXAw06zj0/edit?usp=sharing;
 
 		async function sha256(texto) {
 			var buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(texto));
