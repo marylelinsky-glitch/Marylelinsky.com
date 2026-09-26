@@ -15,10 +15,10 @@
 	<meta name="theme-color" content="#16232e" />
 
 	<style>
-		/* FUNDO — neblina ao entardecer, com pétala de flor */
+		/* FUNDO — céu de conto de fadas, inspirado na capa "Saudade é Nome de Flor" */
 		body {
-			background: linear-gradient(135deg, #16232e 0%, #2e4756 55%, #5e7a86 100%);
-			color: #f5f5f5;
+			background: linear-gradient(135deg, #3d2e63 0%, #6b5b95 45%, #9d8fd6 78%, #b7c3ea 100%);
+			color: #fdfbf7;
 		}
 
 		#wrapper {
@@ -31,28 +31,28 @@
 		}
 
 		p {
-			color: #e0e0e0;
+			color: #f1ecf9;
 		}
 
-		/* BOTÕES */
+		/* BOTÕES — laranja do gato da capa */
 		.button {
-			background-color: #e8b4b8 !important; /* rosa envelhecido — a flor da saudade */
-			color: #2a1a1c !important;
+			background-color: #f2a65a !important;
+			color: #3a2415 !important;
 			border: none !important;
 		}
 
 		.button:hover {
-			background-color: #d89aa0 !important;
+			background-color: #e08f3e !important;
 		}
 
 		/* FORMULÁRIO DE CONTACTO */
 		form label {
-			color: #e0e0e0;
+			color: #f1ecf9;
 		}
 
-		/* REDES */
+		/* REDES — rosa das flores */
 		.icons a {
-			color: #e8b4b8 !important;
+			color: #f0b8cd !important;
 			font-size: 22px;
 		}
 
@@ -283,7 +283,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
 	// Substitui ESTES 3 valores pelos teus (ver instrucoes)
-	emailjs.init({ publicKey: GeR7AOatMxYc05NM7 });
+	emailjs.init({ publicKey: "GeR7AOatMxYc05NM7" });
 
 	document.getElementById("contact-form").addEventListener("submit", function(e) {
 		e.preventDefault();
@@ -293,7 +293,7 @@
 		botao.value = "A enviar...";
 		botao.disabled = true;
 
-		emailjs.sendForm(service_aclccz8, template_an7497r, this)
+		emailjs.sendForm("service_aclccz8", "template_an7497r", this)
 			.then(function() {
 				status.innerHTML = "<p style=\"color:#7fd8a4;\"><i class=\"fa-solid fa-circle-check\"></i> Mensagem enviada! Obrigada pelo contacto.</p>";
 				document.getElementById("contact-form").reset();
